@@ -10,6 +10,7 @@ namespace Casperlaitw\LaravelFbMessenger\Contracts\Debug;
 
 use Exception;
 use Illuminate\Contracts\Debug\ExceptionHandler;
+use Throwable;
 
 class Handler implements ExceptionHandler
 {
@@ -36,16 +37,19 @@ class Handler implements ExceptionHandler
     /**
      * Report or log an exception.
      *
-     * @param  \Exception  $e
+     * @param Throwable $e
      *
      * @return void
+     * @throws Exception
      */
-    public function report(Exception $e)
+    public function report(Throwable $e)
     {
+        // TODO: Implement report() method.
         if ($this->exceptionHandler !== null) {
             $this->exceptionHandler->report($e);
         }
     }
+
 
     /**
      * Render an exception into an HTTP response.
