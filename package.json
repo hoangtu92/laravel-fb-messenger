@@ -37,7 +37,7 @@
     }
   },
   "dependencies": {
-    "bootstrap-vue": "^0.3.7",
+    "bootstrap-vue": "^2.0.0",
     "highlight.js": "^9.8.0",
     "json-stringify": "^1.0.0",
     "laravel-echo": "^1.1.3",
